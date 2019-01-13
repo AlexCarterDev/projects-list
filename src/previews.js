@@ -17,7 +17,7 @@ var preview_description = [
     },
     {
         title: "Drum Machine",
-        text: "Playing samples. Have a three bank with diffrent sets of sampels.",
+        text: "Playing samples. Have three banks with diffrent sets of sampels.",
         bottom_text: "React, Redux",
         img: "images/drum_machine.png",
         link: "apps/drum_machine/index.html",
@@ -33,7 +33,7 @@ var preview_description = [
     },
     {
         title: "Pomodoro Clock",
-        text: "Break down work into intervals, by default 25 minutes in length, separated by 5 mintes short breaks",
+        text: "Break down work into intervals, by default 25 minutes in length separated by 5 mintes short breaks",
         bottom_text: "React, Redux",
         img: "images/pomodoro_clock.png",
         link: "apps/pomodoro_clock/index.html",
