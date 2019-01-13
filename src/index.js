@@ -20,18 +20,21 @@ class App extends Component {
     render() {
 
         return (
-            <div id="app-container">
+            <div>
                 <h3 id="app-title">My Projects</h3>
-                {preview_description.map((d, index) => 
-                    <Preview 
-                        key={index} 
-                        title={d.title} 
-                        text={d.text}
-                        bottom={d.bottom_text}
-                        img={d.img}
-                        github={d.github}
-                        link={d.link}
-                />)}
+                <div id="app-container">
+                    
+                    {preview_description.map((d, index) => 
+                        <Preview 
+                            key={index} 
+                            title={d.title} 
+                            text={d.text}
+                            bottom={d.bottom_text}
+                            img={d.img}
+                            github={d.github}
+                            link={d.link}
+                    />)}
+                </div>
             </div>
         );
     }

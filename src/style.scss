@@ -5,10 +5,13 @@
 }
 
 #app-container {
-    max-width: 500px;
+    max-width: 700px;
     margin: 0 auto;
     padding: 0 10px;
-    
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 10px;
+    justify-items: center;
 }
 
 #app-title {
@@ -19,6 +22,7 @@
 
 .preview {
     padding: 10px;
+    width: 320px;
     display: grid;
     grid-template-columns: 140px auto;
     grid-template-rows: 30px auto 14px;
@@ -49,4 +53,10 @@
     text-align: right;
     color: #329431;
     font-size: 10px;
+}
+
+@media (max-width: 700px) {
+    #app-container {
+        grid-template-columns: auto;
+    }
 }
