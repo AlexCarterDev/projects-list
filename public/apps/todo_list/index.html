@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo list</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" ref="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+    <div class="container">
+        <ul class="todo box-shadow">
+            <li class="title">
+                <span class="name">Todo list</span>
+                <span class="percentage"></span>
+            </li>
+            <div class="task-container"></div>
+            <li class="create">
+                <i class="material-icons unselectable">add</i>
+                <input class="new-task" contenteditable="true" placeholder="New task">
+            </li>
+            <li class="bottom"></li>
+        </ul>
+    </div>
+
+    <script src="libs/Sortable.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

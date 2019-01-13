@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--
+Main goal:
+  Create html page that looks like telegram instant view page
+About instant view:
+  instantview.telegram.org
+Examples:
+  telegra.ph/api
+  telegra.ph/europa-04-19
+
+Assumptions about page structure:
+  tl_page_wrap - centering, restrict width
+    tl_page - add padding: top, bottom
+      tl_article - container, not add padding
+        tl_article_header - header of the article
+        tl_editor - another layer
+          gl-editor - contains html elements, imgs, pragraph etc.
+          ... - hide
+        tl_article_buttons - hide for not author (edit and publish buttons)
+
+Notes:
+  don't use class names same as html tags, firefox inspect elements will
+not show that css property.
+
+-->
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <div class="page_wrap">
+    <div class="page">
+      <main class="content">
+
+        <header class="article_header">
+          <h1>Jupiter</h1>
+          <address>
+            <!-- The rel attribute specifies the relationship between the current document and the linked document. -->
+            <!-- Only used if the href attribute is present. -->
+            <a rel="author">
+              From Wikipedia, the free encyclopedia
+            </a>
+
+            <time datetime="2018-04-21 20:00"> <!-- machine-readable -->
+              April 21, 2018 <!-- human-readable -->
+            </time>
+          </address>
+        </header>
+
+        <article class="article">
+          <!-- The contenteditable attribute specifies whether the content of an element is editable or not. -->
+          <figure>
+            <div class="figure_wrapper">
+              <img src="660px-Jupiter_and_its_shrunken_Great_Red_Spot.jpg">
+              <figcaption class="fig_caption">
+                Full-disc view of Jupiter in natural color in April 2014
+              </figcaption>
+            </div>
+          </figure>
+          <p>
+            <strong> Jupiter </strong> is the fifth planet from the Sun and the largest in the
+            Solar System. It is a giant planet with a mass one-thousandth
+            that of the Sun, but two-and-a-half times that of all the other
+            planets in the Solar System combined.
+          </p>
+
+          <h4>Physical characteristics</h4>
+          <p>
+            Jupiter is composed primarily of gaseous and liquid matter.
+            It is the largest of the four giant planets in the Solar System
+            and hence its largest planet. It has a diameter of 142,984 km
+            (88,846 mi) at its equator. The average density of Jupiter,
+             1.326 g/cm3, is the second highest of the giant planets,
+             but lower than those of the four terrestrial planets.
+          </p>
+
+          <figure>
+            <div class="figure_wrapper">
+              <img src="pia21973.jpg">
+              <figcaption class="fig_caption">
+                High Above Jupiter's Clouds
+              </figcaption>
+            </div>
+          </figure>
+
+          <h4>Radiotelescope research</h4>
+          <p>
+            Scientists discovered that there were three forms of radio signals transmitted from Jupiter.
+          </p>
+          <ul>
+            <li>
+              Decametric radio bursts (with a wavelength of tens of meters)
+              vary with the rotation of Jupiter, and are influenced by interaction
+              of Io with Jupiter's magnetic field.
+            </li>
+            <li>
+              Decimetric radio emission (with wavelengths measured in centimeters)
+              was first observed by Frank Drake and Hein Hvatum in 1959.
+              The origin of this signal was from a torus-shaped belt around
+              Jupiter's equator. This signal is caused by
+              <a href="https://en.wikipedia.org/wiki/Cyclotron_radiation">cyclotron radiation</a>
+              from electrons that are accelerated in Jupiter's magnetic field.
+            </li>
+            <li>
+              Thermal radiation is produced by heat in the atmosphere of Jupiter.
+            </li>
+          </ul>
+
+        </article>
+      </main>
+    </div>
+  </div>
+
+</body>
+</html>

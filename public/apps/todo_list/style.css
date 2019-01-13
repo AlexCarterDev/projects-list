@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    padding: 40px 100px 0 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.box-shadow {
+  box-shadow: 0 0 100px -20px rgba(0,0,0,.3);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Utiliy functinos */
+.unselectable {
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.todo {
+    font-size: 10px;
+    background: white;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Soratble */
+.todo-chosen-task {
+    background: #f6f6f6;
+}
+
+/* Title */
+.todo .title {
+    font-size: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em;
+    background-image: linear-gradient(170deg, red, #ffe933);
+    color: white;
+}
+
+/* Task */
+.todo .task {
+    padding-left: 0.5em;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+.todo .completed {
+    color: #aaa;
+    font-style: italic;
+}
+
+.todo .btn-remove {
+    color: #888;
+    visibility: hidden;
+}
+.todo .task:hover > .btn-remove {
+    visibility: visible;
+}
+.todo .description:focus + .btn-remove{
+    visibility: visible;
+}
+.todo .btn-drag {
+    color: black;
+    visibility: hidden;
+}
+.todo .task:hover > .btn-drag {
+    visibility: visible;
+}
+.todo .task .material-icons:hover {
+    cursor: pointer;
+}
+.todo .task .btn-drag {
+    font-size: 2em;
+    padding: .4em 0px;
+}
+.todo .task .checkbox {
+    font-size: 2em;
+    padding: .4em .2em .4em .1em;
+}
+.todo .task .btn-remove {
+    font-size: 2em;
+    padding: .4em;
+}
+
+.todo .description {
+    padding: 0.5em 0; 
+    flex-grow: 1;
+    font-size: 1.7em;
+    margin-left: 0.5em;
+    margin-right: 0.5em;
+    word-wrap: break-word;
+    /* Do not allow content go to outside  */
+    overflow: hidden;
+    outline: 0px solid transparent;
+}
+/* Prevent height of element from collapsing to 0 when content is empty. */
+.todo .description:empty::before {
+    content: "\00a0"; /* non-breaking space */
+}
+
+/* Create button */
+.todo .create {
+    padding-left: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #a4a4a4;
+}
+
+.todo .create .material-icons {
+    font-size: 2em;
+    padding: 0 3px;
+}
+.todo .create .new-task {
+    font-size: 1.7em;
+    flex-grow: 1;
+}
+
+.todo .new-task {
+    padding: .5em 0;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+}
+
+
+/* Bottom line */
+.todo .bottom {
+    background-image: linear-gradient(to right, red, #ffe933);
+    height: 3px;
+}

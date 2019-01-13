@@ -1,0 +1,197 @@
+* {
+  box-sizing: border-box;
+}
+
+::-moz-selection {
+  background: #8ed78d;
+  color: #006a1f;
+  text-shadow: none;
+}
+
+body {
+  margin: 0;
+  background-color: #fff;
+  color: #333;
+  line-height: 1.42;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+/* --- Navigation bar --- */
+#navbar_wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  /* If position: fixed; - the right property sets the right edge of an element
+  to a unit to the right of the right edge of its nearest positioned ancestor. */
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 50px;
+  max-width: 900px;
+}
+.navbar {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  float: left;
+}
+.navbar li a {
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: black;
+  font-size: 17px;
+  color: #70e9d1;
+}
+.navbar-right {
+  float: right;
+}
+.navbar-left {
+  float: left;
+}
+.navbar-hover li a:hover {
+  border-bottom: 2px solid #70e9d1;
+}
+@media only screen and (max-width: 600px) {
+  .navbar-left {
+    width: 100%;
+  }
+  .navbar-right {
+    width: 100%;
+  }
+  .navbar-right li {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    width: 90%;
+  }
+  .navbar-right li a {
+    text-align: left;
+  }
+}
+
+/* --- Header --- */
+#header_wrap {
+  padding-top: 230px;
+  text-align: center;
+  min-height: 430px;
+  box-sizing: border-box;
+  /* url from current dir: css */
+  background: url(../images/back.jpg) no-repeat center top;
+  color: white;
+  font-size: 20px;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* --- Portfolio --- */
+/* This looks correct in browser, but writing that was very hard for me.
+I need to learn more about CSS */
+#portfolio_wrap {
+  white-space: nowrap;
+  padding: 0;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 40px;
+  display: table;
+}
+#portfolio_wrap h1 {
+  font-size: 36px;
+  color: #4a4a4a;
+  padding-top: 0px;
+  margin: 0;
+}
+.photos {
+  display: block;
+}
+.photos img {
+  max-width: 100%;
+  height: auto;
+}
+.photo {
+  padding: 10px 10px 0px 10px;
+  width: 33%;
+  float: left;
+}
+.photo a {
+  text-decoration: none;
+}
+.photo img:hover {
+  opacity: 0.5;
+}
+@media only screen and (max-width: 600px) {
+  .photo {
+    width: 95%;
+    float: none;
+    margin: auto;
+  }
+}
+
+/* --- Social links --- */
+#social_wrap {
+  margin-top: 40px;
+  text-align: center;
+  max-width: 1200px;
+  background: #f2f2f2;
+  margin-left: auto;
+  margin-right: auto;
+}
+#social_wrap div {
+  padding: 20px;
+}
+#social_wrap a {
+  text-decoration: none;
+  color: #4a4a4a;
+  margin: 0 40px;
+  font-size: 30px;
+}
+@media only screen and (max-width: 400px) {
+  #social_wrap a {
+    float: none;
+    margin: 0;
+  }
+}
+
+/* --- Footer --- */
+#footer_wrap {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+  max-width: 1200px;
+  background: #2f2f2f;
+  padding: 20px;
+  overflow: hidden;
+}
+#footer_wrap a, #footer_wrap p{
+  margin: 0;
+  color: white;
+  clear: both;
+  display: inline-block;
+  white-space:nowrap;
+}
+.footer-left {
+  text-align: left;
+  float: left;
+}
+.footer-right {
+  text-align: right;
+  float: right;
+}
+.footer-right a {
+  padding-left: 20px;
+}
+@media only screen and (max-width: 300px) {
+  .footer-left, .footer-right {
+    text-align: center;
+    float: none;
+  }
+
+}

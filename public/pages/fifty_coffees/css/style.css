@@ -1,0 +1,161 @@
+/* temoporary hidden */
+#footer-wrap {
+  visibility: hidden;
+  display: none;
+}
+
+/* --- default element styles --- */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.7em;
+  color: #424242;
+  font-size: 16px;
+  margin: 0;
+}
+a {
+  color: #1955fa;
+  text-decoration: none;
+  outline: none;
+}
+a:hover {
+  color: #38c3ff;
+}
+
+/* --- Utils --- */
+.active-header-link {
+  color: #38c3ff;
+}
+.clr {
+  clear: both;
+}
+
+/* --- Wraps --- */
+#site {
+  padding: 70px 20px;
+}
+#canvas {
+  margin: 0 auto;
+  max-width: 850px;
+  overflow: hidden;
+}
+#main-nav-wrap {
+  margin-top: 60px;
+}
+#page-wrap {
+  margin-top: 50px;
+}
+#page-social-link-wrap {
+  text-align: right;
+}
+#logo-wrap {
+  text-align: center;
+}
+
+/* --- Visual elements --- */
+/* logo */
+.logo {
+  color: #424242;
+  font-size: 45px;
+  font-family: 'Short Stack', cursive;
+  line-height: 45px;
+  margin: 0;
+  text-transform: none;
+  text-align: center;
+  display: inline-block;
+}
+.logo:hover {
+  color: #38c3ff;
+}
+
+/* dropdown menu */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+}
+.dropdown-content a {
+    display: block;
+    padding: 5px 0;
+    text-align: left;
+}
+.dropdown-content a:first-child {
+  margin-top: 20px;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* navigation bar */
+.main-nav > div, .main-nav > a {
+  margin: 0 10px;
+}
+.main-nav {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* social links */
+.social-links {
+  display: inline-block;
+}
+.social-links svg {
+  border-radius: 50%;
+  fill: white;
+  background-color: black;
+  width: 36px;
+  height: 36px;
+  transition-property: background-color;
+  transition-duration: 170ms, 170ms;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+}
+.social-links-1:hover svg:not(:hover) {
+  background-color: #aaa;
+}
+.social-links-2:hover svg:not(:hover) {
+  background-color: #aaa;
+}
+
+/* image */
+#image-block {
+  margin-top: 40px;
+}
+#image-block img {
+  width: 100%;
+  height: auto;
+}
+#image-block figure {
+  padding: 0;
+  margin: 0;
+}
+
+/* mobile menu selection */
+#mobile-nav {
+  display: none;
+  width: 80%;
+  margin: 0 auto;
+  text-transform: uppercase;
+  height: 30px;
+  color: #38c3ff;
+  border: none;
+  background: #eee;
+  border-style: none;
+  outline: none;
+  -moz-appearance: none;
+  border-radius: 5px;
+}
+
+@media (max-width: 500px) {
+  #mobile-nav {
+    display: block;
+  }
+  .main-nav {
+    display: none;
+  }
+}
