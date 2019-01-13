@@ -4,7 +4,7 @@ var preview_description = [
         text: "Show random quotes from remote json file. Post a quote through the link to twitter or tublr",
         bottom_text: "React",
         img: "images/random_quote_machine.png",
-        link: "apps/random_quote_machine",
+        link: "apps/random_quote_machine/index.html",
         github: "https://github.com/AlexCarterDev/my-frontend-snippets/tree/master/p02_random-quote-machine",
     },
     {
@@ -12,7 +12,7 @@ var preview_description = [
         text: "Convert markdown markup language into HTML using library \"marked.js\"",
         bottom_text: "React",
         img: "images/markdown_previewer.png",
-        link: "apps/markdown_previewer",
+        link: "apps/markdown_previewer/index.html",
         github: "https://github.com/AlexCarterDev/my-frontend-snippets/tree/master/p03_markdown-previewer"
     },
 ];
